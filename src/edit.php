@@ -25,7 +25,7 @@ $detail = $db->edit($_GET['id']);
 
         <form method="POST" action="proses.php?aksi=update">
             <?php
-            foreach ($detail as `$hasil`) {
+            foreach ($detail as $hasil) {
             ?>
                 <input type="hidden" name="id" value="<?php echo $hasil['id'] ?>" />
                 <div class="mb-3">
